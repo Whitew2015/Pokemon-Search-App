@@ -1,5 +1,218 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2b6cb0;
+}
+
+/* Search Div */
+.search-div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #555;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #2b6cb0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #2a4365;
+}
+
+/* Display Div */
+.display-div {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#sprite-container img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    background: #f7fafc;
+}
+
+/* Types Styling */
+.type {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.type.normal {
+    background: #AAA67F;
+}
+
+.type.fire {
+    background: #F57D31;
+}
+
+.type.water {
+    background: #6493EB;
+}
+
+.type.electric {
+    background: #F9CF30;
+}
+
+.type.grass {
+    background: #74CB48;
+}
+
+.type.ice {
+    background: #9AD6DF;
+}
+
+.type.fighting {
+    background: #C12239;
+}
+
+.type.poison {
+    background: #A43E9E;
+}
+
+.type.ground {
+    background: #DEC16B;
+}
+
+.type.flying {
+    background: #A891EC;
+}
+
+.type.psychic {
+    background: #FB5584;
+}
+
+.type.bug {
+    background: #A7B723;
+}
+
+.type.rock {
+    background: #B69E31;
+}
+
+.type.ghost {
+    background: #70559B;
+}
+
+.type.dragon {
+    background: #7037FF;
+}
+
+.type.dark {
+    background: #75574C;
+}
+
+.type.steel {
+    background: #B7B9D0;
+}
+
+.type.fairy {
+    background: #E69EAC;
+}
+
+/* Stats Table */
+.stats-div {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+th {
+    background: #f1f5f9;
+    color: #2b6cb0;
+}
+
+td {
+    background: #f9fafb;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
 }
